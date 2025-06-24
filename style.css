@@ -1,0 +1,737 @@
+:root {
+  --primary: #814df2;
+  --accent: #ff3c3c;
+  --bg-dark: #000;
+  --text-light: #ffffff;
+  --text-muted: #ccc;
+  --radius: 12px;
+  --font: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.container {
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Dobra 1 */
+header.hero {
+  background: url("/assets/images/dobra1/background.png") no-repeat center
+    center/cover;
+  padding: 6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 71.25rem;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1 1 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+}
+
+h1 span {
+  color: #2889d1;
+}
+
+.hero-text .subheadline {
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.flex-column-custom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #4942ce, #929292, #4942ce);
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #929292, #4942ce, #929292);
+  color: #000;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dobra 2 */
+.problems,
+.benefits,
+.access,
+.about,
+.summary,
+.pricing,
+.guarantee,
+.faq {
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.grid-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.problems {
+  background: url("/assets/images/dobra2/bgDobra2.png") no-repeat center
+    center/cover;
+  padding: 6rem 2rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-top: -3.125rem;
+}
+
+.highlight {
+  color: #2889d1;
+}
+
+/* Cards com Flex */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cards h4 {
+  font-size: 2rem;
+}
+
+.cards h4 span {
+  color: #2889d1;
+}
+
+.cards img {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card,
+.card2 {
+  border-left: 0.3125rem solid var(--primary);
+  padding: 1rem;
+  border-radius: var(--radius);
+  max-width: 37.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 100%;
+}
+
+.card {
+  background: linear-gradient(to right, #633bd4, #2889d1);
+}
+
+.card .copy {
+  flex: 4;
+}
+
+.card .copy p {
+  font-size: 1 rem;
+  color: #afafaf;
+}
+
+.card .imageCard {
+  flex: 1;
+}
+
+.card2 {
+  background: linear-gradient(to right, #2889d1, #633bd4);
+  padding: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.card:hover {
+  background: linear-gradient(to right, #2889d1, #633bd4);
+}
+
+.card2:hover {
+  background: linear-gradient(to right, #633bd4, #2889d1);
+  color: #b8b7b7;
+}
+
+.card img {
+  max-width: 12.5rem;
+  border-radius: var(--radius);
+}
+
+/* Flex Multi Column */
+.flex-2col,
+.flex-3col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.flex-2col > * {
+  flex: 1 1 45%;
+}
+
+.flex-3col > * {
+  flex: 1 1 30%;
+}
+
+/* Dobra 4 */
+.about {
+  background: url("/assets/images/dobra4/bgDobra4.png") no-repeat center
+    center/cover;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about .container p {
+  text-align: justify;
+  padding-right: 1rem;
+}
+
+/* Dobra 5 */
+.summary {
+  background: url("/assets/images/dobra5/bgDobra5.png") no-repeat center
+    center/cover;
+}
+
+section.summary .container img {
+  margin: 0 auto;
+  display: flex;
+  border-radius: 8px;
+}
+
+/* Dobra 6 */
+.pricing {
+  background: url("/assets/images/dobra6/bgDobra6.png") no-repeat center
+    center/cover;
+}
+
+/* Dobra 7 */
+.guarantee {
+  background: #151515;
+  text-align: center;
+}
+
+.guarantee .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-items: flex-start;
+}
+
+.guarantee .copy {
+  text-align: left;
+  margin-top: 12.5rem;
+}
+
+/* Dobra 8 - FAQ */
+.faq {
+  background: #1a1a1a;
+}
+
+.faq .container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.faq .faq-list {
+  flex: 2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq .faq-cta {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.faq-question {
+  cursor: pointer;
+  color: #4942ce;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #0a0a0a;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Breakpoints */
+@media (min-width: 1281px) {
+  section.problems {
+    display: flex;
+  }
+
+  section.problems img {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .problems .cards {
+    max-width: 56.25rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .problems .cards .card {
+    min-width: 800px;
+  }
+
+  .access {
+    background-color: #151332;
+  }
+
+  .access .container img {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .about {
+    padding: 5rem;
+  }
+
+  .about p {
+    font-size: 1.2rem;
+  }
+
+  .pricing img {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .guarantee {
+    margin: 0;
+    padding: 0;
+  }
+
+  .guarantee .container {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .guarantee .container img {
+    max-width: 400px;
+  }
+
+  .guarantee .container .copy {
+    margin-top: 3.125rem;
+    float: right;
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+
+  .faq .container {
+    margin: 0 200px;
+  }
+
+  .faq-question strong {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero-inner {
+    flex-direction: column;
+    margin: 0 150px;
+  }
+
+  .about .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .problems img {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .guarantee .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .access .container img {
+    padding-left: 9.375rem;
+  }
+
+  .about .container p {
+    max-width: 36.25rem;
+    margin: 0 auto;
+    font-size: 1.625rem;
+  }
+
+  .card {
+    min-width: 50rem;
+    padding: 3rem 1rem;
+    flex: 1;
+  }
+
+  .card .copy {
+    flex: 4;
+  }
+
+  .card .imageCard {
+    flex: 1;
+  }
+
+  .card .copy p {
+    font-size: 1.1 rem;
+    color: #afafaf;
+  }
+
+  section.access .container .cards .card2 {
+    min-width: 50rem;
+  }
+
+  .about .container div {
+    min-width: 800px;
+    margin: 0 auto;
+  }
+
+  .about .container div p {
+    min-width: 100%;
+  }
+
+  .about .container div img {
+    min-width: 100%;
+  }
+
+  .pricing-box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .guarantee .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .guarantee .container img {
+    width: 80%;
+  }
+  .guarantee .container .copy {
+    font-size: 1.5rem;
+    width: 70%;
+    margin-top: 50px;
+  }
+
+  .faq-question strong {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    margin: 0 25px;
+  }
+
+  h2.section-title p {
+    margin-top: 15px;
+    line-height: 1.25rem;
+  }
+
+  section.problems .cards h4 {
+    max-width: 600px;
+  }
+
+  section.problems .cards img {
+    display: none !important;
+  }
+
+  section.problems .cards .imageCard {
+    display: none !important;
+  }
+
+  .access .container img {
+    margin: 0 auto;
+    display: flex;
+    max-width: 600px;
+    margin-left: -20px;
+  }
+
+  .about .container p {
+    max-width: 400px;
+    display: flex;
+    padding: 0px 100px 0 0;
+  }
+
+  .about .container img {
+    max-width: 400px;
+    display: flex;
+    padding: 0px 80px 0 0;
+  }
+
+  section.summary .container img {
+    max-width: 600px;
+  }
+
+  .pricing-box img {
+    max-width: 600px;
+  }
+
+  .guarantee .container .copy {
+    margin-right: 20px;
+    text-align: justify;
+  }
+
+  .flex-column-custom img {
+    margin: 0 auto;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  section.problems .container img {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  section.problems .section-title {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 700px;
+    font-size: 1.9rem;
+  }
+
+  .section-title {
+    margin: 0 auto;
+  }
+
+  section.problems .container {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.problems .container .cards .card {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card,
+  .card2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .faq .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  header.hero {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .hero-text .subheadline {
+    font-size: 1rem;
+    color: #afafaf;
+  }
+
+  .hero-image {
+    flex: 1;
+  }
+
+  .problems img {
+    max-width: 400px;
+  }
+
+  .problems .section-title {
+    width: 400px;
+  }
+
+  h2.section-title p {
+    font-size: 1.2rem;
+  }
+
+  .cards .card .copy h3 {
+    font-size: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .cards .copy p {
+    margin: 0 200px;
+    font-size: 1rem;
+  }
+
+  .problems {
+    padding: 20px 0 0 0;
+  }
+  .problems .container .cards div h4 {
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .access .container img {
+    margin: 0 auto;
+    display: flex;
+    max-width: 400px;
+    margin-left: -20px;
+    padding-left: 0;
+    margin-top: -50px;
+  }
+
+  .access .cards {
+    max-width: 400px;
+  }
+
+  .about .container > div {
+    max-width: 100%;
+    padding: 0 100px 0 0;
+    float: left;
+  }
+
+  .about .container > div p {
+    max-width: 400px;
+    padding: 0;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .about .container div img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .summary .container img {
+    max-width: 400px !important;
+  }
+
+  .pricing img {
+    max-width: 400px;
+  }
+
+  .guarantee .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .guarantee .container .copy {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  section.access .container .cards .card2 {
+    max-width: 350px !important;
+    flex-direction: none;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
